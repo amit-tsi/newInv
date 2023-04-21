@@ -1,0 +1,97 @@
+<div class="container">
+  <app-navbar title="State List"></app-navbar>
+  <mat-card>
+
+    <mat-card-title>City Master</mat-card-title>
+    <mat-card-subtitle></mat-card-subtitle>
+    <mat-card-content>
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" *ngIf="cities != null">
+        <ng-container matColumnDef="icon">
+          <th mat-header-cell *matHeaderCellDef> No. </th>
+          <td mat-cell *matCellDef="let element; let i=index;"> <mat-icon>account_circle</mat-icon> </td>
+        </ng-container>
+
+        <!-- cityId Column hidden -->
+        <ng-container matColumnDef="cityId">
+          <th mat-header-cell *matHeaderCellDef> </th>
+          <td mat-cell *matCellDef="let element"> {{element.cityId}} </td>
+        </ng-container>
+        <!-- stateId Column hidden -->
+        <ng-container matColumnDef="stateId">
+          <th mat-header-cell *matHeaderCellDef> </th>
+          <td mat-cell *matCellDef="let element"> {{element.stateId}} </td>
+        </ng-container>
+        <!-- stateName Column -->
+        <ng-container matColumnDef="stateName">
+          <th mat-header-cell *matHeaderCellDef> StateName </th>
+          <td mat-cell *matCellDef="let element"> {{element.stateName}} </td>
+        </ng-container>
+<!-- cityname Column -->
+<ng-container matColumnDef="cityName">
+  <th mat-header-cell *matHeaderCellDef> City Name </th>
+  <td mat-cell *matCellDef="let element"> {{element.cityName}} </td>
+</ng-container>
+
+
+        <!-- pinCode Column -->
+        <ng-container matColumnDef="pinCode">
+          <th mat-header-cell *matHeaderCellDef> PinCode </th>
+          <td mat-cell *matCellDef="let element"> {{element.pinCode}} </td>
+        </ng-container>
+
+        <!-- description Column -->
+        <ng-container matColumnDef="description">
+          <th mat-header-cell *matHeaderCellDef> Description </th>
+          <td mat-cell *matCellDef="let element"> {{element.description}} </td>
+        </ng-container>
+       
+        <!-- isActive Column -->
+        <ng-container matColumnDef="isActive">
+          <th mat-header-cell *matHeaderCellDef> Active </th>
+          <td mat-cell *matCellDef="let element"> {{element.isActive}} </td>
+        </ng-container>
+         <!-- isMetro Column -->
+         <ng-container matColumnDef="isMetro">
+          <th mat-header-cell *matHeaderCellDef> Metro </th>
+          <td mat-cell *matCellDef="let element"> {{element.isMetro}} </td>
+        </ng-container>
+
+        <!-- isDeleted Column -->
+        <ng-container matColumnDef="isDeleted">
+          <th mat-header-cell *matHeaderCellDef> Deleted </th>
+          <td mat-cell *matCellDef="let element"> {{element.isDeleted}} </td>
+        </ng-container>
+
+         <!-- createdBy Column -->
+         <ng-container matColumnDef="createdBy">
+          <th mat-header-cell *matHeaderCellDef> CreatedBy </th>
+          <td mat-cell *matCellDef="let element"> {{element.createdBy}} </td>
+        </ng-container>
+
+         <!-- createdOn Column -->
+         <ng-container matColumnDef="createdOn">
+          <th mat-header-cell *matHeaderCellDef> createdOn </th>
+          <td mat-cell *matCellDef="let element"> {{element.createdOn}} </td>
+        </ng-container>
+
+
+         <!-- updatedBy Column -->
+         <ng-container matColumnDef="updatedBy">
+          <th mat-header-cell *matHeaderCellDef> UpdatedBy </th>
+          <td mat-cell *matCellDef="let element"> {{element.updatedBy}} </td>
+        </ng-container>
+
+         <!-- updatedOn Column -->
+         <ng-container matColumnDef="updatedOn">
+          <th mat-header-cell *matHeaderCellDef> UpdatedOn </th>
+          <td mat-cell *matCellDef="let element"> {{element.updatedOn}} </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </mat-card-content>
+
+  </mat-card>
+
+</div>

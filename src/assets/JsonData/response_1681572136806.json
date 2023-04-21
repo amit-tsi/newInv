@@ -1,0 +1,57 @@
+[
+  {
+    "brandId": 6,
+    "brandName": "Credo",
+    "description": "Router",
+    "isActive": true,
+    "isDeleted": false,
+    "createdBy": "System",
+    "createdOn": "2023-04-13T14:31:30.1390244",
+    "updatedBy": "System",
+    "updatedOn": "2023-04-13T14:31:30.1390245"
+  },
+  {
+    "brandId": 4,
+    "brandName": "Hifocus",
+    "description": "DVR,Camera,Cables",
+    "isActive": true,
+    "isDeleted": false,
+    "createdBy": "System",
+    "createdOn": "2023-04-13T14:31:30.1390029",
+    "updatedBy": "System",
+    "updatedOn": "2023-04-13T14:31:30.1390048"
+  },
+  {
+    "brandId": 7,
+    "brandName": "Instaroute",
+    "description": "Router",
+    "isActive": true,
+    "isDeleted": false,
+    "createdBy": "System",
+    "createdOn": "2023-04-13T14:31:30.1390255",
+    "updatedBy": "System",
+    "updatedOn": "2023-04-13T14:31:30.1390255"
+  },
+  {
+    "brandId": 5,
+    "brandName": "Securico",
+    "description": "Panel, Sensors",
+    "isActive": true,
+    "isDeleted": false,
+    "createdBy": "System",
+    "createdOn": "2023-04-13T14:31:30.1390231",
+    "updatedBy": "System",
+    "updatedOn": "2023-04-13T14:31:30.1390231"
+  },
+  {
+    "brandId": 8,
+    "brandName": "Vighnaharta",
+    "description": "Panel,Sensors",
+    "isActive": true,
+    "isDeleted": false,
+    "createdBy": "System",
+    "createdOn": "2023-04-13T14:31:30.1390265",
+    "updatedBy": "System",
+    "updatedOn": "2023-04-13T14:31:30.1390265"
+  }
+]
